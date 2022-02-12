@@ -5,10 +5,10 @@ description: The largest collection of books, courses, podcasts, newsletters abo
 collections:
   books_ruby:
     output: true
-    permalink: /ruby/book/:name
+    permalink: /ruby/book/:name:output_ext
   books_rails:
     output: true
-    permalink: /ruby-on-rails/book/:name
+    permalink: /ruby-on-rails/book/:name:output_ext
 
 defaults:
   -
