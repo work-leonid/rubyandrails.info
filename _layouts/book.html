@@ -1,0 +1,139 @@
+---
+layout: default
+---
+
+{% capture the_collection %}{{page.collection}}{% endcapture %}
+
+{% if page.collection %}
+{% assign  document = site[the_collection] %}
+{% endif %}
+
+{% for links in document  %}
+{% if links.title == page.title %}
+{% unless forloop.first %}
+{% assign prevurl = prev.url %}
+{% endunless %}
+{% unless your_collection_name.last.url %}
+{% assign next = document[forloop.index] %}
+{% assign nexturl = next.url %}
+{% endunless %}
+{% endif %}
+{% assign prev = links %}
+{% if page.collection %}
+{% assign  document = site[the_collection] %}
+{% endif %}
+{% for links in document  %}
+{% if links.title == page.title %}
+{% unless forloop.first %}
+{% assign prevurl = prev.url %}
+{% endunless %}
+{% unless your_collection_name.last.url %}
+{% assign next = document[forloop.index] %}
+{% assign nexturl = next.url %}
+{% endunless %}
+{% endif %}
+{% assign prev = links %}
+{% endfor %}{% endfor %}
+
+
+<div class="max-w-6xl lg:flex lg:gap-10 lg:mx-auto">
+
+    <div class="flex p-5 md:p-10 gap-10 flex-col md:flex-row lg:flex-col items-center md:items-end lg:items-stretch mb-10 ">
+        <!--            cover  -->
+        <div class="w-72 block">
+            {% if page.cover %}
+            <img src="{{site.baseurl}}/assets/images/books/{{page.cover}}" alt=""
+                 class="object-scale-down shrink-0 shadow-xl rounded-md">
+            {% else %}
+            <div class="bg-gradient-to-br from-slate-600 to-slate-800 h-96 w-64  shrink shadow-xl shadow-slate-600/10 rounded-md p-5 text-3xl text-slate-100 font-serif">
+                <span class="block text-sm mb-3 opacity-60">{{page.author}}</span>
+                {{ page.title}}
+            </div>
+            {% endif %}
+        </div>
+
+        <!--                buttons -->
+        <div class="w-full">
+            <h2 class="font-bold mb-2">Get book on</h2>
+            {% if page.amazon %}
+            <a href="{{page.amazon}}" target="_blank"
+               class="bg-red-600 hover:bg-red-700 text-white justify-center px-5 py-2 rounded-lg flex gap-2 items-center mb-2">
+                www.amazon.com
+            </a>
+            {% endif %}
+
+            {% if page.publisher %}
+            <a href="{{page.publisher}}" target="_blank"
+               class="bg-red-600 hover:bg-red-700 text-white px-5 justify-center py-2 rounded-lg flex gap-2 items-center mb-2">
+                {{page.publisher_title}}
+            </a>
+            {% endif %}
+
+            {% if page.sample %}
+            <a href="{{page.sample}}" target="_blank"
+               class="border border-slate-300 hover:bg-slate-100 text-slate-600 px-5 justify-center py-2 rounded-lg flex gap-2 items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Book sample
+            </a>
+            {% endif %}
+
+            {% if page.ppp %}
+            <a href="{{page.ppp}}" target="_blank"
+               class="text-slate-600 px-5 justify-center py-2 rounded-full flex gap-2 items-center">
+                Discount
+            </a>
+            {% endif %}
+        </div>
+    </div>
+    <!--            content -->
+    <div class="w-full p-5 md:p-10">
+        <div class="text-center lg:text-left mb-10">
+            <h1 class="text-4xl md:text-5xl font-black mb-5">
+                {{page.title}}.
+                {% if page.subtitle %} <span class="text-slate-500">{{page.subtitle}}</span>{% endif %}
+            </h1>
+            <p>by {{page.author}}</p>
+        </div>
+        <div class="prose prose-slate prose-lg">
+            {{content}}
+        </div>
+    </div>
+</div>
+
+<!--        navigations between books-->
+<div class="sticky bottom-0">
+    <div class="bg-gradient-to-t from-slate-100 pb-4">
+        <div class="max-w-2xl flex justify-between w-full mx-auto px-5">
+            {% if prevurl %}
+            <a href="{{ prevurl }}"
+               class="rounded-full bg-white shadow-xl shadow-slate-600/10 w-14 h h-14 flex justify-center items-center  hover:-translate-y-2 ease-in-out transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-red-500" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+            </a>
+            {% endif %}
+
+            <a href="{{site.baseurl}}/{{page.root_page}}"
+               class="rounded-full bg-white shadow-xl text-red-600 shadow-slate-600/10 flex px-10 items-center py-2 hover:-translate-y-2 ease-in-out transition">
+                All Books
+            </a>
+
+            {% if nexturl %}
+            <a href="{{ nexturl }}"
+               class="rounded-full bg-white shadow-xl shadow-slate-600/10 w-14 h h-14 flex justify-center items-center  hover:-translate-y-2 ease-in-out transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-red-500" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+
+
+

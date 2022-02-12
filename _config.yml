@@ -1,5 +1,30 @@
-title: Tailwind Jekyll Starter Kit
-description: A starter kit for using Tailwind with Jekyll
+title: Ruby & Ruby on Rails books, courses and more
+description: The largest collection of books, courses, podcasts, newsletters about Ruby and Ruby On Rails
+
+
+collections:
+  books_ruby:
+    output: true
+    permalink: /ruby/book/:name
+  books_rails:
+    output: true
+    permalink: /ruby-on-rails/book/:name
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "books_ruby"
+    values:
+      layout: "book"
+      root_page: "ruby/books.html"
+  -
+    scope:
+      path: ""
+      type: "books_rails"
+    values:
+      layout: "book"
+      root_page: "rails/books.html"
 
 exclude:
   - Gemfile

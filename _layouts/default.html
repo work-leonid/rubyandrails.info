@@ -3,10 +3,15 @@
 
 {% include header.html %}
 
-<main
-  class="bg-indigo-500 flex h-screen items-center justify-center w-full"
->
-  {{ content }}
+<main class="flex flex-col sm:flex-row bg-slate-50 text-lg text-slate-700">
+  <aside class="bg-slate-800 disable-scrollbars pt-10 w-64 shrink-0 overflow-x-scroll top-0 sm:h-screen sticky">
+    {% include sidebar.html %}
+  </aside>
+
+  <div class="w-full">
+    {{ content }}
+  </div>
+
 </main>
 
 {% include footer.html %}

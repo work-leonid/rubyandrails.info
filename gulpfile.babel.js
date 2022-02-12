@@ -48,6 +48,8 @@ task("startServer", () => {
     files: [SITE_ROOT + "/**"],
     open: "local",
     port: 4000,
+    ghostMode: false,
+      notify: false,
     server: {
       baseDir: SITE_ROOT,
       serveStaticOptions: {
