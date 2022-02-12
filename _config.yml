@@ -12,7 +12,7 @@ collections:
 
 defaults:
   - scope:
-      path: "assets/images/ruby"
+      path: "assets/images/books/ruby"
     values:
       image: true
   -
