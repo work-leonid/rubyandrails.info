@@ -11,6 +11,10 @@ collections:
     permalink: /ruby-on-rails/book/:name:output_ext
 
 defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
   -
     scope:
       path: ""
