@@ -2,42 +2,64 @@
 layout: default
 ---
 
-<!--<div class="px-10 pt-10 ">-->
-<!--    <h1 class="text-5xl font-black mb-10">Books about Ruby & Ruby on Rails</h1>-->
+<div class="px-10 pt-10 ">
+    <h1 class="text-5xl font-black mb-10 max-w-3xl">
+        Everything you need to become an expret in Ruby and Ruby on Rails
+    </h1>
 
-<!--    <h2 class="mb-10">Books about Ruby</h2>-->
-<!--    {% assign books_ruby = site.books | where: 'category', 'ruby' %}-->
-<!--    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-10">-->
-<!--        {% for book in books_ruby  %}-->
-<!--        <a href="{{ book.url }}" class="flex flex-col items-start bg-white rounded-lg hover:shadow-xl hover:-translate-y-2 transition-all ease-in-out font-bold hover:shadow-slate-500/10 text-xl text-red-600">-->
-<!--            <img src="{{site.baseurl}}/assets/images/books/{{book.cover}}" alt="" class="object-scale-down pl-5 -mt-5 h-64 shrink-0">-->
-<!--            <div class="px-5 pt-3 pb-4 flex flex-col">-->
-<!--                {{ book.title }}-->
-<!--                <span class="text-sm font-normal text-slate-500">by {{book.author}}</span>-->
-<!--            </div>-->
-<!--        </a>-->
-<!--        {% endfor %}-->
-<!--    </div>-->
+    <section class="mb-20">
+        <div class="flex justify-between items-center  mb-10">
+            <h2 class="text-3xl font-bold">Books about Ruby</h2>
+            <a href="{{site.baseurl}}/ruby/books" class="px-3 py-2 border border-red-500 rounded-lg text-red-600">All
+                Books</a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-10">
+            {% for book in site.books_ruby | limit: 4 %}
+            <a href="{{ book.url }}"
+               class="flex flex-col items-start bg-white rounded-lg hover:shadow-xl hover:-translate-y-2 transition-all ease-in-out font-bold hover:shadow-slate-500/10 text-xl text-red-600">
+                {% if book.cover %}
+                <img src="{{site.baseurl}}/assets/images/books/{{book.cover}}" alt=""
+                     class="object-fill xl:ml-5 rounded-md shadow-xl shadow-slate-600/10 -mt-5 h-64 shrink-0">
+                {% else %}
+                <div class="bg-gradient-to-br from-slate-600 to-slate-800 ml-5 h-64 w-48 -mt-5  shadow-xl shadow-slate-600/10 rounded-sm p-5 text-2xl text-slate-400 font-serif">
+                    <span class="block text-sm mb-3">{{book.author}}</span>
+                    {{ book.title}}
+                </div>
+                {% endif %}
+                <div class="px-5 pt-3 pb-4 flex flex-col">
+                    {{ book.title }}
+                    <span class="text-sm font-normal text-slate-500">by {{book.author}}</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
 
-<!--    <h2>Books about Ruby on Rails</h2>-->
-
-<!--    {% assign _books_rails = site.books | where: 'category', 'rails' %}-->
-<!--    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-10">-->
-<!--        {% for book in _books_rails  %}-->
-<!--        <a href="{{ book.url }}" class="flex flex-col p-5 bg-white rounded-lg hover:shadow-lg font-bold hover:shadow-slate-500/10 text-xl text-red-600">-->
-<!--            {{ book.title }}-->
-<!--            <span class="text-sm font-normal text-slate-500">by {{book.author}}</span>-->
-<!--        </a>-->
-<!--        {% endfor %}-->
-<!--    </div>-->
-
-<!--    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-10">-->
-<!--        {% for post in site.books %}-->
-<!--        <a href="{{ post.url }}"-->
-<!--           class="flex flex-col p-5 bg-white rounded-lg hover:shadow-lg font-bold hover:shadow-slate-500/10 text-xl text-red-600">-->
-<!--            {{ post.title }}-->
-<!--            <span class="text-sm font-normal text-slate-500">by {{post.author}}</span>-->
-<!--        </a>-->
-<!--        {% endfor %}-->
-<!--    </div>-->
-<!--</div>-->
+    <section>
+        <div class="flex justify-between items-center  mb-10">
+            <h2 class="text-3xl font-bold">Books about Ruby on Rails</h2>
+            <a href="{{site.baseurl}}/ruby/books" class="px-3 py-2 border border-red-500 rounded-lg text-red-600">All
+                Books</a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-10">
+            {% for book in site.books_rails | limit: 1 %}
+            <a href="{{ book.url }}"
+               class="flex flex-col items-start bg-white rounded-lg hover:shadow-xl hover:-translate-y-2 transition-all ease-in-out font-bold hover:shadow-slate-500/10 text-xl text-red-600">
+                {% if book.cover %}
+                <img src="{{site.baseurl}}/assets/images/books/{{book.cover}}" alt=""
+                     class="object-fill xl:ml-5 rounded-md shadow-xl shadow-slate-600/10 -mt-5 h-64 shrink-0">
+                {% else %}
+                <div class="bg-gradient-to-br from-slate-600 to-slate-800 ml-5 h-64 w-48 -mt-5  shadow-xl shadow-slate-600/10 rounded-sm p-5 text-2xl text-slate-400 font-serif">
+                    <span class="block text-sm mb-3">{{book.author}}</span>
+                    {{ book.title}}
+                </div>
+                {% endif %}
+                <div class="px-5 pt-3 pb-4 flex flex-col">
+                    {{ book.title }}
+                    <span class="text-sm font-normal text-slate-500">by {{book.author}}</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+</div>
