@@ -1,6 +1,11 @@
 title: Ruby & Ruby on Rails books, courses and more
 description: The largest collection of books, courses, podcasts, newsletters about Ruby and Ruby On Rails
-
+url: rubyandrails.info
+social:
+  name: Leonid Nazarov
+  links:
+    - https://twitter.com/nleonid
+logo: /assets/og_cover.png
 
 collections:
   books_ruby:
@@ -29,6 +34,9 @@ defaults:
     values:
       layout: "book"
       root_page: "ruby-on-rails/books.html"
+
+plugins:
+  - jekyll-seo-tag
 
 exclude:
   - Gemfile
