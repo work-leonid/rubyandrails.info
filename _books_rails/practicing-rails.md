@@ -1,11 +1,9 @@
 ---
-layout: book
-title: Reliably Deploying Rails Applications
-subtitle: Hassle free provisioning, reliable deployment
+title: Practicing Rails 
+subtitle: Learn Rails without being overwhelmed 
 author: ['Justin Weiss']
 publisher: https://www.justinweiss.com/practicing-rails/
 publisher_title: Jsutin Weiss 
-permalink: books/ruby-on-rails/:title
 category: ['rails']
 tags: ['ruby-on-rails']
 ---
