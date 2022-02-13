@@ -3,11 +3,10 @@ title: Practicing Rails
 subtitle: Learn Rails without being overwhelmed 
 author: ['Justin Weiss']
 publisher: https://www.justinweiss.com/practicing-rails/
-publisher_title: Jsutin Weiss 
+publisher_title: Jsutin Weiss  
 category: ['rails']
 tags: ['ruby-on-rails']
 ---
-
 
 > The goal of Ruby is to make programmers happy. So why do I have to slog through 400 pages on RSpec and Capybara and Bootstrap and Sass before I can write a simple blog?
 
