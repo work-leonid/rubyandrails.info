@@ -1,5 +1,5 @@
 ---
-title: Rails: Novice to Ninja
+title: Rails Novice to Ninja
 subtitle: The ultimate beginner's guide to Rails!
 author: ['Patrick Lenz', 'Glenn Goodrich'] 
 cover: rails/rails-novice-to-ninja.jpg
