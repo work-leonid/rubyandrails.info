@@ -17,7 +17,7 @@ collections:
 
 defaults:
   - scope:
-      path: "assets/images/books/ruby"
+      path: "assets/images/"
     values:
       image: true
   -
