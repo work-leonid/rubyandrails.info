@@ -1,14 +1,19 @@
 ---
-layout: book
 title: Effective ruby
 subtitle: 48 Specific Ways to Write Better Ruby
 author: Peter J. Jones
-cover: learning_ruby.jpeg
-amazon: https://effectiveruby.com 
+cover: rails/effective-ruby.jpg
 publisher: https://effectiveruby.com
 publisher_title: Effective ruby
 published: 8 September 2014
-category: rails
+category: ['rails'] 
 ---
 
-If you’re an experienced Ruby programmer, Effective Ruby will help you harness Ruby’s full power to write more robust, efficient, maintainable, and well-performing code. Drawing on nearly a decade of Ruby experience, Peter J. Jones brings together 48 Ruby best practices, expert tips, and shortcuts—all supported by realistic code examples.
+> If you’re an experienced Ruby programmer, Effective Ruby will help you harness Ruby’s full power to write more robust, efficient, maintainable, and well-performing code. 
+
+
+Drawing on nearly a decade of Ruby experience, Peter J. Jones brings together 48 Ruby best practices, expert tips, and shortcuts—all supported by realistic code examples.
+
+- Practical advice for intermediate Ruby programmers, split into 48 actionable items.
+- Kick bad habits from other languages and embrace the Ruby way of doing things.
+- Expert guidance on Ruby internals such as the hidden inheritance hierarchy and the generational garbage collector in Ruby 2.1.

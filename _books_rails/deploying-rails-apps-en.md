@@ -2,9 +2,9 @@
 title: Reliably Deploying Rails Applications
 subtitle: Hassle free provisioning, reliable deployment
 author: ['Ben Dixon'] 
-cover: deploying-rails-apps-en.jpeg
+cover: rails/deploying-rails-apps-en.jpeg
 publisher: https://leanpub.com/deploying_rails_applications
-publisher_title: Leanpub 
+publisher_title: www.leanpub.com 
 published: 2 April 2021
 category: ['rails']
 tags: ['capistrano-3', 'chef', 'devops', 'ruby-on-rails']

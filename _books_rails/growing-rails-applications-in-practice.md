@@ -1,13 +1,11 @@
 ---
-layout: book
 title: Growing Rails Applications in Practice
 subtitle: Structure large Ruby on Rails apps with the tools you already know and love
 author: ['Henning Koch', 'Thomas Eisenbarth']
-cover: growing-rails-applications-in-practice.jpeg
+cover: rails/growing-rails-applications-in-practice.jpg
 publisher: https://leanpub.com/growing-rails
-publisher_title: Leanpub
+publisher_title: www.leanpub.com
 published: 5 May 2016
-permalink: books/ruby-on-rails/:title
 category: ['rails']
 tags: ['ruby-on-rails']
 ---

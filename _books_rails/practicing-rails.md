@@ -3,7 +3,6 @@ layout: book
 title: Reliably Deploying Rails Applications
 subtitle: Hassle free provisioning, reliable deployment
 author: ['Justin Weiss']
-cover: deploying-rails-apps-en.jpeg
 publisher: https://www.justinweiss.com/practicing-rails/
 publisher_title: Jsutin Weiss 
 permalink: books/ruby-on-rails/:title

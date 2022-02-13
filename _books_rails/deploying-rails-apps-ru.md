@@ -1,13 +1,11 @@
 ---
-layout: book
 title: Надежный деплой Rails приложений
 subtitle: Уверенная настройка серверов и надежный деплой приложений
 author: ['Ben Dixon', 'Eugene Burmakin'] 
-cover: deploying-rails-apps-ru.jpeg
+cover: rails/deploying-rails-apps-ru.jpeg
 publisher: https://leanpub.com/deploying_rails_applications-ru
-publisher_title: Leanpub 
+publisher_title: www.leanpub.com 
 published: 3 March 2016
-permalink: books/ruby-on-rails/:title
 category: ['rails']
 tags: ['capistrano-3', 'chef', 'devops', 'ruby-on-rails']
 ---
