@@ -7,7 +7,6 @@ cover: deploying-rails-apps-en.jpeg
 publisher: http://rebuilding-rails.com
 publisher_title: rebuilding-rails.com 
 published: 2 March 2015
-permalink: books/ruby/:title
 category: ['ruby']
 tags: ['ruby-2', 'rspec', 'sinatra','ruby-on-rails-4', 'minitest', 'cucumber', 'byebug', 'pry', 'drb']
 ---
