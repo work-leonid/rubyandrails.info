@@ -28,7 +28,7 @@ defaults:
       type: "books_rails"
     values:
       layout: "book"
-      root_page: "rails/books.html"
+      root_page: "ruby-on-rails/books.html"
 
 exclude:
   - Gemfile
