@@ -10,6 +10,7 @@ tags: ['ruby-on-rails']
 
 > The goal of Ruby is to make programmers happy. So why do I have to slog through 400 pages on RSpec and Capybara and Bootstrap and Sass before I can write a simple blog?
 
+
 ## Learn Rails without being overwhelmed
 
 In this ebook, you’ll learn:
