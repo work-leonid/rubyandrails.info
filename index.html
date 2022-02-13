@@ -42,7 +42,7 @@ layout: default
                 Books</a>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-10">
-            {% for book in site.books_rails | limit: 1 %}
+            {% for book in site.books_rails | limit: 4 %}
             <a href="{{ book.url }}"
                class="flex flex-col items-start bg-white rounded-lg hover:shadow-xl hover:-translate-y-2 transition-all ease-in-out font-bold hover:shadow-slate-500/10 text-xl text-red-600">
                 {% if book.cover %}
