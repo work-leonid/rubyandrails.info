@@ -7,7 +7,7 @@ cover: ruby/eloquent-ruby.jpg
 amazon: https://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional/dp/0321584104/
 publisher: https://www.poodr.com
 publisher_title: www.poodr.com
-published: 11 February 2011
+year: 2011
 root_page: ruby/books.html
 category: ['ruby']
 tags: ['ruby-3']

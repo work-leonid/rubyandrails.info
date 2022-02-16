@@ -7,7 +7,7 @@ cover: ruby/the-well-grounded-rubyist.jpeg
 amazon: https://www.amazon.com/Well-Grounded-Rubyist-David-Black/dp/1617295213
 publisher: https://www.manning.com/books/the-well-grounded-rubyist-third-edition
 publisher_title: www.manning.com
-published: 15 March 2019
+year: 2019
 root_page: ruby/books.html
 category: ['ruby']
 tags: ['ruby-3']

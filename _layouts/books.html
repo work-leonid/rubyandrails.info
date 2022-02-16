@@ -2,26 +2,114 @@
 layout: default
 ---
 
-<div class="px-10 pt-10">
-    <h1 class="text-5xl font-black mb-20">Books about {{page.title}}</h1>
+<!--{% assign cat = page.name_collection %}-->
+<!--{% for item in site.[cat] %}-->
+<!--    {{item.categories | capitalize | join: ', '}}-->
+<!--{% endfor %}-->
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-10">
-        {% assign by = page.name_collection %}
-        {% for book in site.[by]  %}
-        <a href="{{ book.url }}" class="flex flex-col items-start bg-white rounded-lg hover:shadow-xl hover:-translate-y-2 transition-all ease-in-out font-bold hover:shadow-slate-500/10 text-xl text-red-600">
-            {% if book.cover %}
-            <img src="{{site.baseurl}}/assets/images/books/{{book.cover}}" alt="" class="object-fill xl:ml-5 rounded-md shadow-xl shadow-slate-600/10 -mt-5 h-64 shrink-0">
-            {% else %}
-            <div class="bg-gradient-to-br from-slate-600 to-slate-800 ml-5 h-64 w-48 -mt-5  shadow-xl shadow-slate-600/10 rounded-sm p-5 text-2xl text-slate-400 font-serif">
-                <span class="block text-sm mb-3">{{book.author}}</span>
-                {{ book.title}}
+<!--<div class="post-categories">-->
+<!--    {% if post %}-->
+<!--    {% assign categories = post.categories %}-->
+<!--    {% else %}-->
+<!--    {% assign categories = page.categories %}-->
+<!--    {% endif %}-->
+<!--    {% for category in categories %}-->
+<!--    <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>-->
+<!--    {% unless forloop.last %}&nbsp;{% endunless %}-->
+<!--    {% endfor %}-->
+<!--</div>-->
+
+
+<!--{% assign vers = site.books_ruby | group_by: "language" %}-->
+<!--{% assign groups = site.books_ruby | group_by: 'language' %}-->
+
+<!--{% for group in groups %}-->
+<!--<a href="/ruby/book/{{ group.name | downcase }}.html">{{ group.name }}</a>-->
+
+<!--    <ul class="mb-10">-->
+<!--   {% for i in group.items %}-->
+<!--        <li><a href="{{ i.url }}">{{ i.title }}</a></li>-->
+<!--    {% endfor %}-->
+<!--    </ul>-->
+
+<!--{% endfor %}-->
+
+<!--{% assign lang = site.books_ruby | where: "language", "english" %}-->
+
+<!--<ul>-->
+<!--{% for l in lang %}-->
+<!--    <li>-->
+<!--        <a href="{{l.url}}">{{ l.title }}</a>-->
+<!--    </li>-->
+<!--{% endfor %}-->
+<!--</ul>-->
+
+<!--{% for gr in vers %}-->
+<!--    {{ gr.name }}-->
+<!--{% endfor %}-->
+
+<!--{% assign newcars = site.my_collection | where: "category", "new" %}-->
+
+<!--{% assign groups = site.books_ruby | group_by: "categories" %}-->
+
+<!--{% for group in groups %}-->
+<!--    <div class="bg-yellow-100">-->
+<!--    {{ group.name  }}-->
+<!--    </div>-->
+<!--{%endfor%}-->
+
+
+<div class="">
+
+    {% include category_nav.html %}
+
+    <div class="space-y-20">
+        {% assign collection_name = page.name_collection %}
+        {% assign sorted_collection = site.[collection_name] | sort: 'year' | reverse %}
+
+        <section>
+            <h2 class="text-4xl mb-8 font-light">Books for <span class="font-medium">2022</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-3 md:gap-5">
+                {% for book in sorted_collection %}
+                {% if book.year == 2022 %}
+                    {% include card_book.html %}
+                {% endif %}
+                {% endfor %}
             </div>
-            {% endif %}
-            <div class="px-5 pt-3 pb-4 flex flex-col">
-                {{ book.title }}
-                <span class="text-sm font-normal text-slate-500">by {{book.author}}</span>
+        </section>
+
+        <section>
+            <h2 class="text-4xl mb-8 font-light">Books for <span class="font-medium">2021</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-3 md:gap-5">
+                {% for book in sorted_collection %}
+                {% if book.year == 2021  %}
+                    {% include card_book.html %}
+                {% endif %}
+                {% endfor %}
             </div>
-        </a>
-        {% endfor %}
+        </section>
+
+        <section>
+            <h2 class="text-4xl mb-8 font-light">Books for <span class="font-medium">2020</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5">
+                {% for book in sorted_collection %}
+                {% if book.year == 2020  %}
+                {% include card_book.html %}
+                {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-4xl mb-8 font-light">Books for <span class="font-medium">other years</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5">
+                {% for book in sorted_collection %}
+                    {% unless book.year == 2022 or book.year == 2021 or book.year == 2020  %}
+                        {% include card_book.html %}
+                    {% endunless %}
+                {% endfor %}
+            </div>
+        </section>
+
     </div>
 </div>

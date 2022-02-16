@@ -7,8 +7,9 @@ cover: ruby/comprehensive-ruby-programming.jpg
 amazon: https://www.amazon.com/dp/1787280640
 publisher: https://www.packtpub.com/product/comprehensive-ruby-programming/9781787280649
 publisher_title: www.packtpub.com
-published: 1 June 2017
+year: 2017
 category: ['ruby']
+language: Русский
 tags: ['ruby-3']
 ---
 

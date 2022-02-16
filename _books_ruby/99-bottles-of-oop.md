@@ -5,11 +5,12 @@ author: Sandi Metz
 cover: ruby/99-bottles-of-oop.jpg
 publisher: https://sandimetz.com/99bottles
 publisher_title: www.sandimetz.com 
-published: 20 January 2021
+year: 2021
 sample: https://sandimetz.com/99bottles-sample-ruby
 ppp: https://sandimetz.com/99bottles-postcard
-category: ['ruby']
-tags: ['ruby-3']
+categories: ['ruby', 'ruby 3', 'free']
+language: english
+version: 'ruby 2'
 ---
 
 >99 Bottles of OOP is a practical guide to writing cost-effective, maintainable, and pleasing object-oriented code

@@ -3,14 +3,15 @@
 
 {% include header.html %}
 
-<main class="flex flex-col sm:flex-row bg-slate-50 text-lg text-slate-700">
-  <aside class="bg-slate-800 disable-scrollbars pt-10 w-64 shrink-0 overflow-x-scroll top-0 sm:h-screen sticky">
-    {% include sidebar.html %}
-  </aside>
+<nav class="disable-scrollbars overflow-x-scroll container max-w-6xl mx-auto">
+    {% include main_nav.html %}
+</nav>
 
-  <div class="w-full">
-    {{ content }}
-  </div>
+<main class="text-lg text-slate-700 container max-w-6xl mx-auto">
+
+    <div class="">
+        {{ content }}
+    </div>
 
 </main>
 

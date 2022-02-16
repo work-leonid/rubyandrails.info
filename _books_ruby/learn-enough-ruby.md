@@ -7,7 +7,7 @@ cover: ruby/learn-enough-ruby.png
 publisher: https://www.learnenough.com/ruby
 publisher_title: www.learnenough.com
 sample: https://www.learnenough.com/ruby-tutorial
-published: 10 December 2007
+year: 2007
 root_page: ruby/books.html
 category: ['ruby']
 tags: ['ruby-3']

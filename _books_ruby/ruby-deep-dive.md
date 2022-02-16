@@ -3,8 +3,8 @@ layout: book
 title: Ruby Deep Dive
 author: ['Jesus Castello']
 publisher: https://www.rubyguides.com/ruby-book/
-publisher_title: www.rubyguides.com 
-published: 2 January 2018
+publisher_title: www.rubyguides.com
+year: 2018
 root_page: ruby/books.html
 category: ['ruby']
 tags: ['ruby-3']

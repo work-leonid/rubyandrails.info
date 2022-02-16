@@ -8,7 +8,7 @@ amazon: https://www.amazon.com/_/dp/1449372651
 publisher: https://headfirstruby.com
 publisher_title: www.headfirstruby.com
 sample: https://cdn.oreillystatic.com/oreilly/booksamplers/9781449372651_sampler.pdf
-published: 1 January 2016
+year: 2016
 root_page: ruby/books.html
 category: ['ruby']
 tags: ['ruby-3']

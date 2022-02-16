@@ -7,7 +7,7 @@ cover: ruby/metaprogramming-ruby.jpg
 amazon: https://www.amazon.com/Metaprogramming-Ruby-Program-Like-Pros/dp/1934356476
 publisher: https://pragprog.com/titles/ppmetr2/metaprogramming-ruby-2/
 publisher_title: www.pragprog.com
-published: 1 August 2014
+year: 2014
 root_page: ruby/books.html
 category: ['ruby']
 tags: ['ruby-2']

@@ -6,8 +6,8 @@ author: ['Chad Fowler']
 cover: ruby/programming-ruby-2.jpg
 amazon: https://www.amazon.com/Programming-Ruby-1-9-2-0-Programmers-dp-1937785491/dp/1937785491/
 publisher: https://pragprog.com/titles/ruby4/programming-ruby-1-9-2-0-4th-edition/
-publisher_title: www.pragprog.com 
-published: 1 June 2013
+publisher_title: www.pragprog.com
+year: 2013
 root_page: ruby/books.html
 category: ['ruby']
 tags: ['ruby-2']

@@ -5,7 +5,7 @@ author: Игорь Симдянов
 cover: ruby/ruby-smirdyanov.jpg
 publisher: https://www.litres.ru/igor-simdyanov/samouchitel-ruby-66338186/
 publisher_title: www.litres.ru
-published: 1 January 2020
+year: 2020
 root_page: ruby/books.html
 category: ['ruby']
 tags: ['ruby-3']
