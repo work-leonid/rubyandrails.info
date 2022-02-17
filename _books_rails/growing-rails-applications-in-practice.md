@@ -5,7 +5,7 @@ author: ['Henning Koch', 'Thomas Eisenbarth']
 cover: rails/growing-rails-applications-in-practice.jpg
 publisher: https://leanpub.com/growing-rails
 publisher_title: www.leanpub.com
-published: 5 May 2016
+year: 2016
 category: ['rails']
 tags: ['ruby-on-rails']
 ---

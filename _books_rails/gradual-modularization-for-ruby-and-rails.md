@@ -5,7 +5,7 @@ author: ['Stephan Hagemann']
 cover: rails/gradual-modularization-for-ruby-and-rails.jpg
 publisher: https://leanpub.com/package-based-rails-applications/
 publisher_title: www.leanpub.com
-published: 22 March 2022
+year: 2022
 category: ['rails']
 tags: ['ruby-on-rails-6']
 ---

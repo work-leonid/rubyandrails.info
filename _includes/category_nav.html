@@ -1,23 +1,22 @@
 <div class="flex flex-col lg:flex-row justify-between items-baseline gap-10 mt-16 mb-20">
     <div class="text-4xl font-light flex flex-col lg:gap-2 flex-1">
         {% if page.category == 'rails' %}
-            {% assign page_url = 'ruby-on-rails' %}
+        {% assign page_url = 'ruby-on-rails' %}
         {% elsif page.category == 'ruby' %}
-            {% assign page_url = 'ruby' %}
+        {% assign page_url = 'ruby' %}
         {% else %}
-            {% assign page_url = 'none' %}
+        {% assign page_url = 'none' %}
         {% endif %}
 
-        <div>{{ page.title }}</div>
+        <div class="mb-5 md:mb-0">{{ page.title }}</div>
 
-        <div class="flex gap-8 lg:gap-5 text-red-500">
+        <div class="flex flex-col sm:flex-row gap-2 sm:gap-5 lg:gap-5 text-red-500">
             {% if page_url == 'none' %}
-
             {% else %}
             <a href="{{site.baseurl}}/{{ page_url }}/books.html" class="hover:text-red-400">Books</a>
-            /
+            <span class="hidden sm:block">/</span>
             <a href="{{site.baseurl}}/{{ page_url }}/courses.html" class="hover:text-red-400">Courses</a>
-            /
+            <span class="hidden sm:block">/</span>
             <a href="{{site.baseurl}}/{{ page_url }}/youtube.html" class="hover:text-red-400">YouTube</a>
             {% endif %}
         </div>

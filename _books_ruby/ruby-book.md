@@ -6,6 +6,7 @@ author: ['Nicholas Johnson']
 publisher: http://nicholasjohnson.com/ruby/book/
 publisher_title: Nicholas Johnson
 year: 2015
+price: free
 root_page: ruby/books.html
 category: ['ruby']
 tags: ['ruby-2', 'rspec', 'sinatra','ruby-on-rails-4', 'minitest', 'cucumber', 'byebug', 'pry', 'drb']

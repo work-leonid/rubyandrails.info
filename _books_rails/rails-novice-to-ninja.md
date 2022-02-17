@@ -6,6 +6,7 @@ cover: rails/rails-novice-to-ninja.jpg
 amazon: https://www.amazon.com/Rails-Novice-Ninja-Build-Website/dp/0994347006
 publisher: https://www.sitepoint.com/premium/books/rails-novice-to-ninja
 publisher_title: www.sitepoint.com
+year: 2016 
 category: ['rails']
 ---
 

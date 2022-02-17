@@ -4,6 +4,7 @@ subtitle: Learn Rails without being overwhelmed
 author: ['Justin Weiss']
 publisher: https://www.justinweiss.com/practicing-rails/
 publisher_title: Jsutin Weiss  
+year: 2015 
 category: ['rails']
 tags: ['ruby-on-rails']
 ---

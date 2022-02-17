@@ -4,7 +4,7 @@ layout: default
 
 <div class="">
     <div class="flex flex-col lg:flex-row justify-between items-baseline gap-10 mt-16 mb-20">
-        <p class="text-4xl font-light max-w-xl leading-snug text-red-500 flex-1">
+        <p class="text-4xl font-light max-w-xl leading-snug flex-1">
             Ruby & Ruby on Rails
         </p>
         <h1 class="text-4xl font-light max-w-xl leading-snug flex-1">
@@ -13,27 +13,26 @@ layout: default
     </div>
 
     <section class="mb-20">
-        <div class="flex justify-between items-center  mb-10">
-            <h2 class="text-3xl font-bold">Books about Ruby</h2>
-            <a href="{{site.baseurl}}/ruby/books.html" class="px-3 py-2 border border-red-500 rounded-lg text-red-600">All
-                Books</a>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-10">
-            {% for book in site.books_ruby | limit: 4 %}
+        <a href="{{site.baseurl}}/ruby/books.html" class="mb-10 inline-block">
+            <h2 class="text-4xl font-light text-red-500">Books about Ruby</h2>
+        </a>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-3 md:gap-10">
+            {% assign sorted_collection = site.books_ruby | sort: 'year' | reverse %}
+
+            {% for book in sorted_collection | limit: 4 %}
             {% include card_book.html %}
             {% endfor %}
         </div>
     </section>
 
     <section>
-        <div class="flex justify-between items-center  mb-10">
-            <h2 class="text-3xl font-bold">Books about Ruby on Rails</h2>
-            <a href="{{site.baseurl}}/ruby-on-rails/books.html"
-               class="px-3 py-2 border border-red-500 rounded-lg text-red-600">All
-                Books</a>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-10">
-            {% for book in site.books_rails | limit: 4 %}
+        <a href="{{site.baseurl}}/ruby-on-rails/books.html" class="mb-10 inline-block">
+            <h2 class="text-4xl font-light text-red-500">Books about Ruby on Rails</h2>
+        </a>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-3 md:gap-10">
+            {% assign sorted_collection = site.books_rails | sort: 'year' | reverse %}
+
+            {% for book in sorted_collection | limit: 4 %}
             {% include card_book.html %}
             {% endfor %}
         </div>

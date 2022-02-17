@@ -6,6 +6,7 @@ cover: rails/vue-on-rails.jpeg
 amazon: https://www.amazon.com/Vue-Rails-End-End-Building/dp/1484251156
 publisher: https://www.apress.com/gp/book/9781484251157
 publisher_title: www.apress.com
+year: 2019 
 category: ['rails']
 ---
 

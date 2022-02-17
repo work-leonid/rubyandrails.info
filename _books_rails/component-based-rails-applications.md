@@ -6,7 +6,7 @@ cover: rails/component-based-rails-applications.jpg
 amazon: https://www.amazon.com/Component-Based-Rails-Applications-Addison-Wesley-Professional/dp/0134774582
 publisher: https://cbra.info/book/index.html
 publisher_title: www.cbra.info
-published: 26 March 2021
+year: 2021
 category: ['rails']
 tags: ['ruby-on-rails-6']
 ---

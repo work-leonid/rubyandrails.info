@@ -6,7 +6,7 @@ cover: rails/beginning-rails-6.jpg
 amazon: https://www.amazon.com/Beginning-Rails-6-Novice-Professional/dp/1484257154
 publisher: https://www.apress.com/gp/book/9781484257159
 publisher_title: www.apress.com
-published: 26 March 2021
+year: 2021
 category: ['rails']
 tags: ['ruby-on-rails-6']
 ---

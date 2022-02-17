@@ -5,7 +5,7 @@ author: ['Ben Dixon']
 cover: rails/deploying-rails-apps-en.jpeg
 publisher: https://leanpub.com/deploying_rails_applications
 publisher_title: www.leanpub.com 
-published: 2 April 2021
+published: 2021
 category: ['rails']
 tags: ['capistrano-3', 'chef', 'devops', 'ruby-on-rails']
 ---

@@ -7,6 +7,7 @@ cover: ruby/ruby-for-romance.jpg
 publisher: https://docs.google.com/document/d/1XrSEp1oXPePxI2mx2OD5l99zwkhhJbod2m9QK_0gOqs/edit
 publisher_title: www.rubyschool.com
 year: 2021
+price: free
 root_page: ruby/books.html
 category: ['ruby']
 tags: ['ruby-3']
