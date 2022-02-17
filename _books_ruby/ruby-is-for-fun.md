@@ -5,8 +5,9 @@ subtitle: Self-Study Course, From Absolute Beginner to Advanced
 author: ['Roman Pushkin']
 cover: ruby/ruby-is-for-fun.jpeg
 publisher: https://leanpub.com/rubyisforfun 
-publisher_title: www.leanpub.com 
-published: 2 February 2022
+publisher_title: www.leanpub.com
+year: 2022
+price: free
 root_page: ruby/books.html
 category: ['ruby']
 tags: ['ruby-3']

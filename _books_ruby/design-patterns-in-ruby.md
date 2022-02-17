@@ -7,10 +7,11 @@ cover: ruby/design-patterns-in-ruby.jpg
 amazon: https://www.amazon.com/Design-Patterns-Ruby-Russ-Olsen/dp/0321490452
 publisher: http://designpatternsinruby.com
 publisher_title: www.designpatternsinruby.com
-published: 20 January 2021
+year: 2021
 root_page: ruby/books.html
-category: ['ruby']
-tags: ['ruby-2']
+category: ['ruby', 'free']
+language: english
+version: 'ruby 3'
 ---
 
 >Engaging, practical, and accessible, Design Patterns in Ruby will help you build better software while making your Ruby programming experience more rewarding.

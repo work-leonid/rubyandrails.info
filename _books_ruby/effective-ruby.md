@@ -6,7 +6,7 @@ author: ['Peter J. Jones']
 cover: ruby/effective-ruby.jpg
 publisher: https://effectiveruby.com
 publisher_title: www.effectiveruby.com
-published: 15 March 2019
+year: 2019
 root_page: ruby/books.html
 category: ['ruby']
 tags: ['ruby-3']

@@ -6,8 +6,8 @@ author: ['Hal Fulton', 'André Arko']
 cover: ruby/the-ruby-way.jpg
 amazon: https://www.amazon.com/Ruby-Way-Programming-Addison-Wesley-Professional-dp-0321714636/dp/0321714636/
 publisher: http://therubyway.io
-publisher_title: www.therubyway.io 
-published: 2 March 2015
+publisher_title: www.therubyway.io
+year: 2015
 root_page: ruby/books.html
 category: ['ruby']
 tags: ['ruby-2', 'rspec', 'sinatra','ruby-on-rails-4', 'minitest', 'cucumber', 'byebug', 'pry', 'drb']

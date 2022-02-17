@@ -5,8 +5,8 @@ author: Stefan Wintermeyer
 cover: rails/learn-rails-5.2.jpeg
 amazon: https://www.amazon.com/Learn-Rails-5-2-Accelerated-Development/dp/148423488X
 publisher: https://link.springer.com/book/10.1007/978-1-4842-3489-1
-publisher_title: www.springer.com 
-published: 17 April 2018
+publisher_title: www.springer.com
+year: 2018
 category: ['rails']
 ---
 

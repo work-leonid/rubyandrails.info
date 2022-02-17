@@ -4,8 +4,8 @@ subtitle: Уверенная настройка серверов и надежн
 author: ['Ben Dixon', 'Eugene Burmakin'] 
 cover: rails/deploying-rails-apps-ru.jpeg
 publisher: https://leanpub.com/deploying_rails_applications-ru
-publisher_title: www.leanpub.com 
-published: 3 March 2016
+publisher_title: www.leanpub.com
+year: 2016
 category: ['rails']
 tags: ['capistrano-3', 'chef', 'devops', 'ruby-on-rails']
 ---

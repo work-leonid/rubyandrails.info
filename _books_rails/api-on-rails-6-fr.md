@@ -4,7 +4,7 @@ author: ['Alexandre Rousseau']
 cover: rails/api-on-rails-6.jpg
 publisher: https://leanpub.com/apionrails6-fr
 publisher_title: www.leanpub.com
-published: 26 March 2021
+year: 2021
 category: ['rails']
 tags: ['ruby-on-rails-6']
 ---

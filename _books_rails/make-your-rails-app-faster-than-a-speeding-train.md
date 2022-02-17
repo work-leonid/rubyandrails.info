@@ -4,6 +4,7 @@ author: Nate Berkopec
 cover: rails/make-your-rails-app-faster-than-a-speeding-train.jpg
 publisher: https://www.railsspeed.com
 publisher_title: www.railsspeed.com 
+year: 2020
 category: ['rails']
 ---
 

@@ -4,7 +4,7 @@ subtitle: Workflow upgrades for crafting Rails apps with superhuman speed
 author: ['Andrew Allen']
 publisher: http://www.efficientrails.com
 publisher_title: www.efficientrails.com
-published: 3 March 2016
+year: 2016
 category: ['rails']
 tags: ['capistrano-3', 'chef', 'devops', 'ruby-on-rails']
 ---

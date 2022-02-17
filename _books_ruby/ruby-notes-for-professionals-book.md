@@ -6,6 +6,8 @@ cover: ruby/ruby-notes-for-professionals-book.jpg
 publisher: https://books.goalkicker.com/RubyBook/
 publisher_title: www.goalkicker.com
 root_page: ruby/books.html
+year: 2021
+price: free
 category: ['ruby']
 tags: ['ruby-2']
 ---

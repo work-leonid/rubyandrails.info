@@ -6,7 +6,7 @@ cover: rails/agile-web-development-with-rails-6.jpg
 amazon: https://www.amazon.com/gp/product/B0872K261G
 publisher: https://pragprog.com/titles/rails6/agile-web-development-with-rails-6/ 
 publisher_title: www.prapprog.com
-published: 1 February 2020
+year: 2020
 category: ['rails']
 tags: ['ruby-on-rails-5']
 ---

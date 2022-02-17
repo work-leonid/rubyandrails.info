@@ -5,8 +5,9 @@ subtitle: Example based guide for text processing with Ruby from the command lin
 author: ['Sundeep Agarwal']
 cover: ruby/ruby-one-liners-cookbook.png
 publisher: https://learnbyexample.github.io/learn_ruby_oneliners/buy.html
-publisher_title: learnbyexample 
-published: 25 March 2021
+publisher_title: learnbyexample
+year: 2021
+price: free
 root_page: ruby/books.html
 category: ['ruby']
 tags: ['ruby-3']

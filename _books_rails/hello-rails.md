@@ -4,6 +4,7 @@ author: Peter J. Jones
 publisher: https://hellorails.io
 publisher_title: www.hellorails.io
 category: ['rails']
+year: 2019
 ---
 
 > A modern course designed to help you start using and understanding Ruby on Rails fast.

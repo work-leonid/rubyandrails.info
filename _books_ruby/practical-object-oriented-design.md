@@ -6,8 +6,8 @@ author: Sandi Metz
 cover: ruby/practical-object-oriented-design.jpg
 amazon: https://www.amazon.com/Practical-Object-Oriented-Design-Agile-Primer/dp/0134456475/
 publisher: https://www.poodr.com
-publisher_title: www.poodr.com 
-published: 27 July 2018
+publisher_title: www.poodr.com
+year: 2018
 root_page: ruby/books.html
 category: ['ruby']
 tags: ['ruby-3']

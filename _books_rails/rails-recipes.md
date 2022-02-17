@@ -5,7 +5,7 @@ subtitle: Rails 3 Edition
 author: Chad Fowler
 cover: rails/rails-recipes.jpg
 amazon: https://www.amazon.com/Rails-Recipes-3-Chad-Fowler-dp-1934356778/dp/1934356778
-published: 13 April 2012
+year: 2012
 tags: ruby on rails 5
 ---
 

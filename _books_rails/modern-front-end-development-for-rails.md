@@ -5,6 +5,7 @@ cover: rails/modern-front-end-development-for-rails.jpg
 amazon: https://www.amazon.com/gp/product/1680507214
 publisher: https://pragprog.com/titles/nrclient/modern-front-end-development-for-rails/
 publisher_title: www.pragprog.com
+year: 2021
 category: ['rails']
 ---
 
