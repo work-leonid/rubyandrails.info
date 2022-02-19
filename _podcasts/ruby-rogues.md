@@ -4,4 +4,5 @@ description: A weekly discussion about Ruby, Rails, and software development inv
 cover: ruby-rogues.jpg
 site: https://rubyrogues.com/
 episodes: https://rubyrogues.com/episodes
+language: English
 ---

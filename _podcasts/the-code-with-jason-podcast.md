@@ -4,4 +4,5 @@ description: On the Code with Jason podcast I discuss technical topics with inte
 cover: the-code-with-jason-podcast.jpg
 site: https://www.codewithjason.com/podcast/
 episodes: https://www.codewithjason.com/podcast/
+language: English
 ---

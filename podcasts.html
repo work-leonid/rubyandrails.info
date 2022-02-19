@@ -6,8 +6,23 @@ description: Listen to podcasts about Ruby and the Ruby on Rails community. Disc
 
 {% include category_nav.html %}
 
-<div class="grid lg:grid-cols-3 gap-5 lg:gap-10">
-    {% for podcast in site.podcasts %}
-    {% include card_podcast.html %}
-    {% endfor %}
-</div>
+{% assign arr = 'English, На русском' | split: ', ' %}
+{% assign sorted_collection = site.podcasts | sort: 'language' %}
+
+{% for lang in arr %}
+<section>
+    <div class="flex lg:gap-10 flex-col lg:flex-row mb-10">
+        <div class="lg:w-1/4">
+            <h2 class="text-4xl mb-8 sticky top-5 font-light ">{{ lang }}</h2>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-5 lg:gap-10 lg:w-3/4">
+            {% for podcast in sorted_collection %}
+            {% if podcast.language == lang %}
+            {% include card_podcast.html %}
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endfor %}

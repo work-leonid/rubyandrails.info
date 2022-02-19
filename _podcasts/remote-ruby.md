@@ -4,4 +4,5 @@ description: Three Rubyists having conversations and interviewing others about R
 cover: remote-ruby.jpg
 site: https://remoteruby.transistor.fm
 episodes: https://remoteruby.transistor.fm/episodes
+language: English
 ---
