@@ -16,6 +16,8 @@
     {% endif %}
     <div class="pt-3 pb-4 flex flex-col">
         {{ book.title }}
-        <span class="text-sm font-normal text-slate-500">by {{book.author}}</span>
+        <span class="text-sm font-normal text-slate-500">
+            by {{book.author | join: ', '}}
+        </span>
     </div>
 </a>

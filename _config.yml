@@ -1,5 +1,5 @@
 title: Ruby & Ruby on Rails books, courses and more
-description: The largest collection of books, courses, podcasts, newsletters about Ruby and Ruby On Rails
+description: The largest collection of books, courses, _podcasts, newsletters about Ruby and Ruby On Rails
 social:
   name: Leonid Nazarov
   links:
@@ -13,6 +13,12 @@ collections:
   books_rails:
     output: true
     permalink: /ruby-on-rails/book/:name:output_ext
+  courses_rails:
+    output: true
+    permalink: /ruby-on-rails/course/:name:output_ext
+  podcasts:
+    output: true
+
 
 defaults:
   - scope:
@@ -33,6 +39,14 @@ defaults:
     values:
       layout: "book"
       root_page: "ruby-on-rails/books.html"
+  -
+    scope:
+      path: ""
+      type: "courses_rails"
+    values:
+      layout: "courses"
+      root_page: "ruby-on-rails/courses.html"
+
 
 plugins:
   - jekyll-seo-tag

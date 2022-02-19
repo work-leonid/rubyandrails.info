@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="">
+
+    {% include category_nav.html %}
+
+    <div class="space-y-20">
+        {% assign collection_name = page.name_collection %}
+        {% assign sorted_collection = site.[collection_name]  %}
+        <section>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5">
+                {% for course in sorted_collection %}
+                    {% include card_course.html %}
+                {% endfor %}
+                </div>
+        </section>
+
+    </div>
+</div>

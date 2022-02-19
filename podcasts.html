@@ -6,4 +6,8 @@ description: Listen to podcasts about Ruby and the Ruby on Rails community. Disc
 
 {% include category_nav.html %}
 
-{% include comingsoon.html  %}
+<div class="grid lg:grid-cols-2 gap-5 lg:gap-10">
+    {% for podcast in site.podcasts %}
+    {% include card_podcast.html %}
+    {% endfor %}
+</div>
