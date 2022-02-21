@@ -1,10 +1,13 @@
 title: Ruby & Ruby on Rails books, courses and more
-description: The largest collection of books, courses, _podcasts, newsletters about Ruby and Ruby On Rails
+description: The largest collection of books, courses, podcasts, newsletters about Ruby and Ruby On Rails
+
 social:
-  name: Leonid Nazarov
-  links:
-    - https://twitter.com/nleonid
-logo: /assets/og_cover.png
+  url: https://rubyandrails.info
+image: og_cover.png
+twitter:
+  card: summary_large_image
+  username: nleonid
+  image: /og_cover.png
 
 collections:
   books_ruby:
