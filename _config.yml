@@ -47,9 +47,10 @@ defaults:
       layout: "courses"
       root_page: "ruby-on-rails/courses.html"
 
-
+url: "https://rubyandrails.info"
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - Gemfile
